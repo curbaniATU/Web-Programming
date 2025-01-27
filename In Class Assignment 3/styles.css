@@ -1,8 +1,33 @@
-.card {
-    width: 450px;
-    height: 250px;
+body{
+    background: linear-gradient(90deg, #f5f5dc, grey)
+}
+
+.card{
+    width: 400px;
+    height: 150px;
     border: 5px solid black;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fcfbf4;
+    background-color: #f0ead6;
+    align-items: center;
+    line-height: 0px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.job-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+a:hover{
+    font-size: 110%;
 }
