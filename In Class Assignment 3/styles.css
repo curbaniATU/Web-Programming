@@ -11,22 +11,26 @@ body{
     background-color: #f0ead6;
     align-items: center;
     line-height: 0px;
+    box-shadow: 0 5px 10px black;
 }
 .name{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Brush Script MT", cursive;
 }
 .job-title{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif
 }
 .contact{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    font-family: 'Times New Roman', Times, serif
 }
 a:hover{
     font-size: 110%;
