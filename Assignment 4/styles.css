@@ -1,7 +1,118 @@
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "footer footer footer";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     background-color: #000000;
     padding: 10px;
+}
+.header{
+    grid-row: 1;
+    background-color: #000000;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    grid-area: header;
+    color: white;
+}
+.item{
+    padding: 20px;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    color: white;
+}
+.item:hover{
+    scale: 102%;
+}
+.footer{
+    color: white;
+    text-align: center;
+    grid-area: footer;
+}
+.text-box{
+    margin-top: 10px;
+    display: block;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+}
+.text-box:hover{
+    background-color: #000000;
+    border: 2px solid white;
+    color: white;
+}
+
+#area1{
+    background: linear-gradient(45deg, #ffdb58, gold);
+}
+#area2{
+    background: linear-gradient(45deg, darkgreen, limegreen)
+}
+#area3{
+    background: linear-gradient(45deg, #fb6188, #fa003f);
+}
+#area4{
+    background: linear-gradient(45deg, cyan, darkblue);
+}
+#area5{
+    background: linear-gradient(45deg, #dda0dd, purple)
+}
+#area6{
+    background: linear-gradient(45deg, orange, #ff5349);
+}
+#logo,
+#language{
+    width: 50%;
+}
+#graduation, #game-creation{
+    width:75%; 
+
+}
+#japan{
+    width: 89%;
+}
+#apocalypse{
+    width: 92%;
+}
+
+body{
+    background: black;
+}
+img {
+    display: block;
+    border: 5px solid white;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 5px 3px #2f2f2f;
+}
+img:hover{
+    scale: 90%;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+@media (max-width: 600px){
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "area1"
+            "area2" 
+            "area3"
+            "area4" 
+            "area5" 
+            "area6"
+            "footer";
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        background-color: #000000;
+        padding: 10px;
+    }
 }
