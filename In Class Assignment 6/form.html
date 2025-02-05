@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Caleb">
+    <title>My First Form</title>
+
+    <script>
+        function generateEmail(form) {
+            document.getElementById("email").innerHTML = form.elements["first"].value + "." + form.elements["last"].value + "@atu.edu";
+
+            form.reset();
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        First Name: <input type="text" id="first" placeholder="Enter your first name here" size="15"> <br>
+        Last Name: <input type="text" id="last" placeholder="Enter your last name here" size="15">
+
+        <input type="button" value="Generate Email" onclick="generateEmail(this.form);">
+
+        <p id="email">
+
+        </p>
+    </form>
+</body>
+</html>
