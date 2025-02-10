@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+form{
+    background: #f4f4f4;
+    border-radius: 10px;
+    border: 10px;
+    padding: 50px;
+}
+label{
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.radio-group input {
+    width: auto;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+.terms-box {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+
+    #terms {
+        width: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
