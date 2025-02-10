@@ -1,5 +1,5 @@
-function isEvenOrOdd(n) {
-    if (n % 2 == 0){
+function isEvenOrOdd(num) {
+    if (num % 2 == 0){
         return true;
     }
     else{
@@ -7,4 +7,4 @@ function isEvenOrOdd(n) {
     }
 }
 
-console.log(isEvenOrOdd(1))
+console.log(isEvenOrOdd(12))
