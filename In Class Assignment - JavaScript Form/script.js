@@ -2,9 +2,11 @@ function checkRequiredFields(form) {
     let requiredFields = true
 
     form.querySelectorAll("[required]").forEach(function(i){
+        i.style.backgroundColor = ""
+
         if (!i.value.trim()){
             requiredFields = false;
-            console.log(i.value.trim())
+            i.style.backgroundColor = "red";
             alert("You have not entered a valid " + i.name);
             return requiredFields;
         }
@@ -23,10 +25,10 @@ function checkRequiredFields(form) {
 
 function validateEmail(form) {
     let email = form.elements["email"].value;
-    console.log(email)
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!email || !emailPattern.test(email)){
+        form.elements["email"].style.backgroundColor = "red"
         alert("The email you have entered is not valid!");
         return false;
     } else {
@@ -37,8 +39,10 @@ function validateEmail(form) {
 
 function validateAge(form){
     let age = form.elements["age"].value;
+    form.elements["age"].style.backgroundColor = ""
 
     if (age > 100 || age < 18){
+        form.elements["age"].style.backgroundColor = "red"
         alert("The age is not within the required range(18-100)!");
         return false;
     } else {
@@ -52,8 +56,10 @@ function formCheck(form){
     let validAge = validateAge(form);
 
     if (!requiredFields || !validAge){
-        alert("The form you have entered is not valid!")
+        return
     } else {
         console.log("Form has been submitted!")
     }
+
+    form.reset()
 }
