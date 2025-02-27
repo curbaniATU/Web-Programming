@@ -9,3 +9,5 @@ function Card({title, content, color}){
         </div>
     )
 }
+
+export default Card;
