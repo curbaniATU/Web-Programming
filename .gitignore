@@ -1,3 +1,4 @@
 examples.js
 
 node_modules
+.env
